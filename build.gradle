@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'RestAssuredAutomation'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    testImplementation 'org.testng:testng:7.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
